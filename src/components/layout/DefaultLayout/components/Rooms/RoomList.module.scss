@@ -1,0 +1,95 @@
+.wrapper {
+    width: 100%;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+.header {
+    padding: 0 10px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px 15px 15px;
+
+    & .btn {
+        background-color: transparent;
+        border-radius: 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 2.2rem;
+        padding: 5px 10px;
+        margin-top: -12px;
+    }
+
+    & .btn:active {
+        color: rgba(0, 255, 255, 0.476);
+    }
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+    & .icon-title {
+        font-size: 1.6rem;
+        margin-right: 10px;
+        font-size: 1.8rem;
+    }
+}
+
+.active {
+    display: flex;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 1000px;
+    background-color: #fff;
+
+    & .search {
+        border: none;
+        outline: none;
+        flex: 1;
+        padding-left: 17px;
+        background-color: transparent;
+    }
+
+    & .btn {
+        width: 80px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fafafa;
+        }
+
+        &:active {
+            background-color: #fafafa8b;
+        }
+    }
+}
+
+.container {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-y: scroll;
+    max-height: 330px;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}

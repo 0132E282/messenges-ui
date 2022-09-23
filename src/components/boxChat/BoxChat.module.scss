@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px 20px;
+    cursor: pointer;
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+
+    &.active {
+        background-color: #3F4FE9;
+
+        & .description {
+            color: #fff;
+        }
+
+        & .names {
+            color: #fff;
+        }
+    }
+
+    &:hover {
+        background-color: #3f50e9ca;
+    }
+
+    &:hover .description,
+    &:hover .names {
+        color: aliceblue;
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.names {
+    font-size: 1.8rem;
+    font-weight: 600;
+    max-width: 120px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: rgb(45, 42, 36);
+    font-weight: 300;
+    font-weight: 600;
+    max-width: 154px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}

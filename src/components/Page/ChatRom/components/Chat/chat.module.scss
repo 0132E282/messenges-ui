@@ -1,0 +1,38 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+}
+
+.chat {
+    border: none;
+    outline: none;
+    border-radius: 1000px;
+    padding: 8px 20px;
+    flex: 1;
+    box-shadow: 0 0 0px 1px rgb(94 172 240 / 80%);
+}
+
+.button {
+    margin-left: 10px;
+    height: 30px;
+    width: 60px;
+    background-color: #28dfff;
+    color: #fff;
+    font-size: 500;
+    border-radius: 5px;
+}
+
+.button:active {
+    background-color: #28dfff94;
+}

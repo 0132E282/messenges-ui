@@ -1,0 +1,23 @@
+:root {
+    --font-family_primary: ;
+    // text 
+    --text-color-primary: ;
+    --text-color-secondary: ;
+    // color 
+    --color-primary: ;
+    --color-secondary: ;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.555%;
+}
+
+html body {
+    height: 0;
+    background-image: linear-gradient(90deg, #B8CFC4, #DAE0E4, #B8CFC4);
+}
