@@ -1,6 +1,6 @@
 import { Button, Input } from 'antd';
 import classnames from 'classnames/bind';
-import { useContext, useMemo, useState, useRef, useEffect } from 'react';
+import { useContext, useMemo, useState, useRef } from 'react';
 import { Timestamp } from 'firebase/firestore';
 
 import { AddDocument } from '~/Firebase/service';
@@ -15,12 +15,11 @@ function Chat() {
     const inputValueMessage = useRef()
 
     const handleChange = (e) => {
-        if (selectedRom.members.length < 2)
-            if (e.target.value === ' ' || e.target.value.length < 1) {
-                setValueMessage('')
-            } else {
-                setValueMessage(e.target.value)
-            }
+        if (e.target.value === ' ' || e.target.value.length < 1) {
+            setValueMessage('')
+        } else {
+            setValueMessage(e.target.value)
+        }
     }
 
     const handleSendValue = () => {
