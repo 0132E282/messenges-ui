@@ -31,6 +31,15 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 const googleProvider = new GoogleAuthProvider();
+// config localhost 
+
+// connectAuthEmulator(auth, "http://localhost:9099")
+
+
+// if (window.location.hostname === 'localhost') {
+//     connectFirestoreEmulator(db, 'localhost', 8080);
+//     connectStorageEmulator(storage, "localhost", 9199);
+// }
 
 //  authentication-related function of google
 const signInWithGoogle = async () => {
